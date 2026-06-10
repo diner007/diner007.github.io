@@ -1,273 +1,320 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!-- Basic Page Needs
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<title>Khaza A. Hoque</title>
+  <title>Khaza A. Hoque</title>
+  <meta name="description" content="Dr. Hoque&#39;s homepage">
+  <meta name="author" content="Dr. Khaza A. Hoque">
 
-<meta name="description" content="Dr. Hoque&#39;s homepage">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta name="author" content="Dr. Khaza A. Hoque">
 
-<!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="./files/normalize.css">
+  <link rel="stylesheet" href="./files/skeleton.css">
+  <link rel="stylesheet" href="./files/style.css">
+  <link rel="stylesheet" href="./files/tabify.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- FONT  -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
-<!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<link rel="stylesheet" href="./files/normalize.css">
-<link rel="stylesheet" href="./files/skeleton.css">
-<link rel="stylesheet" href="./files/style.css">
-<link rel="stylesheet" href="./files/tabify.css">
 
-<!-- FONT -->
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 
 </head>
-
 <body>
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        <div class="header">
+            <h1>Khaza Anuarul Hoque</h1>
+        </div>
+         <div id="nav">
+                       <ul>
+                        <li class="active"><a href="#about">Home</a></li>
+<!--                        <li><a href="#research">Research</a></li>-->
+                        <li onclick="location.href='https://scholar.google.com/citations?hl=en&user=eJ87TzoAAAAJ&view_op=list_works&sortby=pubdate';" style="cursor:pointer;">Publications</li>
+                        <li><a href="#awards">Honors/Awards</a></li>   
+			<li><a href="#courses">Teaching</a></li>
+			<!-- <li><a href="https://www.dcpslab.com">Research</a></li>  -->
+			<li onclick="location.href='https://www.dcpslab.com';" style="cursor:pointer;">Research</li>       
+                        <li><a href="#bio">Services</a></li>
+                       <li onclick="location.href='https://www.linkedin.com/posts/hoquek_phd-position-advertisement-activity-7417991612481396736-KxPh';" style="cursor:pointer;">Hirings</li>    
+						   
+                        
+            </ul>
+        </div>
 
-<div class="container">
 
-<div class="header">
-  <h1>Khaza Anuarul Hoque</h1>
-</div>
 
-<div id="nav">
-  <ul>
-    <!-- FIX 5: All external nav items now use <a href target="_blank"> instead of onclick -->
-    <!-- FIX 6: "Services" renamed to "Activities" to match section heading -->
-    <li class="active"><a href="#about">Home</a></li>
-    <li><a href="https://scholar.google.com/citations?hl=en&user=eJ87TzoAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Publications</a></li>
-    <li><a href="#awards">Honors/Awards</a></li>
-    <li><a href="#courses">Teaching</a></li>
-    <li><a href="https://www.dcpslab.com" target="_blank">Research</a></li>
-    <li><a href="#bio">Activities</a></li>
-    <!-- FIX 3: "Hirings" now points to the #hiring tab instead of an external LinkedIn URL -->
-    <li><a href="#hiring">Hirings</a></li>
-  </ul>
-</div>
+            <div class="row" style="margin-top: 2rem;">
+                <div class="four columns sidebar">
+                    <br>
+                    <img src="./files/khaza2.png" alt="Khaza&#39;s photo" width="225" height="344">
+                    <ul class="contact">
+			<li>Associate Professor</li>    
+                        <li><a href="http://engineering.missouri.edu/eecs/">Department of EECS</a></li>
+			<li><a href="http://missouri.edu/">University of Missouri-Columbia, USA</a></li>    
+			<br>    
+                        <li><strong>Office</strong>: Naka hall, Room 321</li>
+                        <li>Columbia, MO 65201, USA</li>
+                        <br>
+                        <li><strong>E-Mail</strong>: hoquek [at] missouri.edu</li><br>
 
-<div class="row" style="margin-top: 2rem;">
+                    </ul>
 
-  <div class="four columns sidebar">
+
+
+
+
+
+
+
+                </div>
+
+                <div class="offset-by-one seven columns">
+
+
+
+                    <div id="about" align="justify" style="display: none;">
+
+<h5>Who Am I ?</h5>
+I am an Associate Professor in the Electrical Engineering & Computer Science Department at University of Missouri (MU), Columbia, USA.
+I direct the <a href="https://www.dcpslab.com">Dependable Cyber-Physical Systems (DCPS)</a> 
+Laboratory at the University of Missouri-Columbia. Before joining MU, I was an FRQNT postdoctoral fellow at the University of Oxford, UK. I am also a senior member of IEEE and ACM.
+<!-- <br> <br>
+I am the recipient of the 2023 EECS Junior Faculty Excellence in Research Award, 2022 MU College of Engineering Junior Faculty Excellence in Teaching Award, 2016 Fonds de Recherche du Quebec-Nature et 
+Technologies (FRQNT) Postdoctoral Fellowship Award, 2012 FRQNT Doctoral Research Award, 2011 IEEE International NEWCAS Conference Best Paper Award, 
+and several other awards.	-->		    
+<br> 
+<!-- If you are a propsective <b> graduate</b> student and looking for a position to join my research team, 
+then click <a href="advert.pdf">here</a> for available positions and requirements. Strong background machine learning, adversarial machine learning
+			    and/or Cyber-physical systems, formal methods/logic/automata theory is preferred.	<br> <br> -->
+			    		 		    
+<br>
+			    			    
+<h5>What I Do?</h5>
+
+Safety-critical Artificial Intelligence (AI) applications deployed on resource-constrained edge devices pose significant challenges due to their safety, reliability, security, privacy, and energy efficiency concerns. My research aims to address these issues through interdisciplinary research, 
+with the ultimate goal of fundamentally transforming the design and deployment of dependable and trustworthy edge AI systems. My research has resulted in ~100 research papers in top venues (core rank A/A*) and research funding from the US National Science Foundation (NSF) and the Department of War (DoW).<br> <br>
+			    
+			    
+		    
+			        			    
+<h5>What Impacts I Made?</h5>
+                  <table class="news">
+                            <tbody>
+				    <tr>
+
+							<td style="text-align: left">February'26</td>
+                                <td style="text-align: left">  Our work FlipLLM from HOST 2026 has been featured in the Mizzou News <a href="https://engineering.missouri.edu/2026/turning-an-impossible-defense-problem-into-a-manageable-one/"> Turning an impossible defense problem into a manageable one </a>.
+				</td>
+                                </tr>
+								
+								<td style="text-align: left">Feb'26</td>
+                                <td style="text-align: left">  Our paper 'RIFT: A Scalable Methodology for LLM Accelerator Fault Assessment using Reinforcement Learning' has been nominated for the Best Paper Award from IEEE DATE 2026 Conference. 
+				</td>
+                                </tr>
+								
+								<td style="text-align: left">November'25</td>
+                                <td style="text-align: left"> Two papers on Fault tolerance and hardware security of edge LLMs have been accepted for publication in the IEEE/ACM DATE 2026 and IEEE HOST 2026 conference !
+				</td>
+                                </tr>
+								
+								<td style="text-align: left">October'25</td>
+                                <td style="text-align: left">  I am  serving as the Research Technical Program Subcommittee Chair (SEC2. Hardware Security: Primitives, Architecture, Design & Test), for the <a href="http://dac.com"> ACM/ESDA/IEEE Design Automation Conference (DAC 2026) </a>.
+				</td>
+                                </tr>
+								
+				<td style="text-align: left">October'25</td>
+                                <td style="text-align: left"> Our team has won the 'best poster from conference papers' award in the IEEE ISMAR 2025 conference (core rank A*). Congratulations to the team !
+				</td>
+                                </tr>
+			<td style="text-align: left">July'25</td>
+                                <td style="text-align: left"> I have received the 'Outstanding TPC Member Award' from the IEEE/ACM Design Automation Conference (DAC), 2025 !
+				</td>
+                                </tr>
+					  
+					  <td style="text-align: left">May'25</td>
+                                <td style="text-align: left">  Our paper on Hardware Trojan detection using LLMs is now available on <a href="https://ieeexplore.ieee.org/stamp/redirect.jsp?arnumber=/6287639/6514899/11091291.pdf"> IEEE Access </a>.
+				</td>
+                                </tr>
+					  
+							<td style="text-align: left">February'25</td>
+                                <td style="text-align: left">  I am  serving as the Finance Chair for the <a href="https://www.iccd-conf.com/Home.html"> 43rd IEEE International Conference on Computer Design (ICCD 2025) </a>.
+				</td>
+                                </tr>
+			  
+				
+				              
+                                </tbody>
+                        </table>
+                    </div>
+
+
+                 
+
+
+                    <div id="bio" align="justify" style="display: none;">
+                        <h5>Activities</h5>
+			<b><br>Journal Editorship:  </b>
+			<ol> 
+			<li> Associate Editor, ACM Transactions on Probabilistic Machine Learning (2023-Date) </li>
+			<li> MDPI Sensors (ISSN 1424-8220), Guest Editor for the Special Issue: Emerging Smart and Intelligent Wearable/Implantable Sensors for IoT and Biomedical applications, 2020.   </li>	
+			</ol>	
+			    
+			<b><br>Conference Organization/Activities:  </b>
+			<ol> 
+			<li> Technical Program Subcommittee Chair (SEC2. Hardware Security: Primitives, Architecture, Design & Test), ACM/ESDA/IEEE Design Automation Conference (DAC 2026). </li>
+			<li> Organizing Chair, the 1st International Workshop on Trustworthy, Secure, and Privacy-Aware Artificial Intelligence for Extended Reality Applications (TRUST-XR 2025). </li>		
+			<li> Finance Chair, 43rd IEEE International Conference on Computer Design (ICCD 2025). </li>
+			<li> Program Committee Co-chair, IEEE International Conference on Engineering Reliable Autonomous Systems (ERAS 2025). </li>	
+			<li> Organizing Chair, the 14th Central Area Networking and Security Workshop (CANSec 2021). </li>
+			<li> Session Chair, 56th ACM/ESDA/IEEE Design Automation Conference (DAC 2019).</li>	
+				
+			</ol>	
+
+			<b>Technical Program Committee/Technical Committee Membership:</b>
+			<ol>
+			<li> IEEE Technical Committee on Verification of Autonomous Systems (VAS) </li>	
+			<li> IEEE Technical Committee on Cyber-Physical Systems (CPS) </li>
+			<li> ACM Conference on Intelligent User Interfaces (ACM IUI 2026)  </li>
+			<li> IEEE World Congress on SERVICES (IEEE SERVICES 2025)  </li>
+			<li> LLM Assisted Security and Trust Exploration (LAST-X) Workshop co-located with NDSS 2026.  </li>		
+			<li> ACM/ESDA/IEEE Design Automation Conference (DAC 2025, DAC 2019-2021)</li>	
+			<li> The 15th IEEE International Green and Sustainable Computing Conference (IGSC 2024) </li>	
+			<li> IEEE/ACM Design, Automation and Test in Europe Conference (DATE 2025, DATE 2022) </li>
+			<li> The 22nd ACM-IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE 2024) </li>
+			<li> The 30th IEEE International Conference on Computer Communications and Networks (ICCCN 2022) </li>
+			<li> International Workshop on Big Data Analytics of Cyber-Physical Systems (CPSBigData 2019) </li>
+			<li> Annual IEEE International Systems Conference (SysCon 2018-2021) </li>
+			<li> IEEE International NEW Circuits And Systems (NEWCAS 2017-2018) </li>
+			<li> IFIP International Conference on Computer Intelligence and Its Applications (CIIA 2018) </li>
+			</ol>
+			    
+			<b>Peer-Reviewer for Journals:</b>
+			<ol>
+			<li> IEEE Transactions on Human-Machine Systems </li>
+			<li> Computers & Security---Elsevier </li>
+			<li> IEEE IEEE Robotics and Automation Letters </li>
+			<li> IEEE Transactions on Artificial Intelligence </li>
+			<li> IEEE/ASME Transactions on Mechatronics </li>	
+			<li> IEEE Transactions on Information Forensics and Security </li>
+			<li> Reliability Engineering and System Safety-Elsevier </li>	
+			<li> IEEE Transactions on Reliability </li>	
+			<li> IEEE Journal on Emerging and Selected Topics in Circuits and Systems </li>
+			</ol>
+			    
+				    
+			
+
+
+                       <br>
+                   </div>
+                    
+
+
+	
+	
+	
+<div id="hiring" align="justify" style="display: none;">
+    <h5>Prospective Students</h5>
+    <p> <b><br>Ph.D. Research/Teaching Assistantship (RA/TA) in formal verification </b>
+    <br>Funded Ph.D. positions are available for Fall 2020 in EECS department at the University of Missouri, Columbia, USA under the supervision of Dr. Khaza Anuarul Hoque. The research project will focus on the development of formal verification based techniques for designing dependable and safe cyber-physical systems.<br><br>
+    
+    Established in 1849, the University of Missouri College of Engineering’s excellence includes nine disciplines, 130 faculty members, more than 3,300 of the brightest undergraduates on campus and more than 600 exceptional graduate students at the flagship campus of the UM System. Electrical engineering at MU was established in 1884 – the first electrical engineering program in the nation. Located in the heart of Missouri, the College of Engineering at Mizzou operates the University of Missouri Research Reactor, the most powerful nuclear research reactor on a university campus nationwide.<br><br>
+    
+    Successful candidates will receive financial support as Research/Teaching Assistants (RAs/TAs), and will also be awarded full tuition waiver. Candidates with expertise in one or more of the following priority areas are especially encouraged to apply.<br><br>
+    
+    <b>Requirements:</b>
+    <ol><li> Excellent academic results in B.Sc/M.Sc. with major in computer science/electrical engineering. The exact admission requirements are available <a href="https://gradstudies.missouri.edu/degreecategory/electrical-and-computer-engineering/">here</a>.<br> </li>
+        <li> Strong background in mathematics (e.g. stochastic modeling, Markov chain) is required. Knowledge of formal verification/automata theory (especially, model checking) will be counted as a strong plus, but not mandatory. <br> </li>
+        <li> Strong programming skills (C/C++, Python) is required. Good understanding of graph theory, dynamic programming, machine learning and optimization techniques are also mandatory.  </li>
+        
+    </ol>
+    
+    The interested candidates are suggested to send an <a href="mailto:hoquek@missouri.edu">email</a> to Dr. Hoque including (1) an email that expresses your interest to the specific research topic, and demonstrate how you meet the above-mentioned requirements, and (2) your curriculum vitae, including a list of publications (if any).<br><br>
+
+<b>Note:</b> Due to large volume of emails, I cannot reply to every email, but I will do my best to reply to competitive applicants. 	
+    
+    
+    
+   
+    </p>
+    
+    
+    
     <br>
-    <img src="./files/khaza2.png" alt="Khaza&#39;s photo" width="225" height="344">
-    <ul class="contact">
-      <li>Associate Professor</li>
-      <li><a href="http://engineering.missouri.edu/eecs/">Department of EECS</a></li>
-      <li><a href="http://missouri.edu/">University of Missouri-Columbia, USA</a></li>
-      <br>
-      <li><strong>Office</strong>: Naka hall, Room 321</li>
-      <li>Columbia, MO 65201, USA</li>
-      <br>
-      <li><strong>E-Mail</strong>: hoquek [at] missouri.edu</li><br>
-    </ul>
-  </div>
-
-  <div class="offset-by-one seven columns">
-
-    <!-- FIX 4: Removed display:none from #about so content is visible even if JS fails -->
-    <div id="about" align="justify">
-      <h5>Who Am I ?</h5>
-
-      I am an Associate Professor in the Electrical Engineering &amp; Computer Science Department at University of Missouri (MU), Columbia, USA.
-      I direct the <a href="https://www.dcpslab.com">Dependable Cyber-Physical Systems (DCPS)</a>
-      Laboratory at the University of Missouri-Columbia. Before joining MU, I was an FRQNT postdoctoral fellow at the University of Oxford, UK. I am also a senior member of IEEE and ACM.
-
-      <br><br>
-
-      <h5>What I Do?</h5>
-
-      Safety-critical Artificial Intelligence (AI) applications deployed on resource-constrained edge devices pose significant challenges due to their safety, reliability, security, privacy, and energy efficiency concerns. My research aims to address these issues through interdisciplinary research,
-      with the ultimate goal of fundamentally transforming the design and deployment of dependable and trustworthy edge AI systems. My research has resulted in ~100 research papers in top venues (core rank A/A*) and research funding from the US National Science Foundation (NSF) and the Department of War (DoW).<br> <br>
-
-      <h5>What Impacts I Made?</h5>
-
-      <!-- FIX 2: Added missing <tr> opening tags to every table row -->
-      <table class="news">
-        <tbody>
-          <tr>
-            <td style="text-align: left">February'26</td>
-            <td style="text-align: left"> Our work FlipLLM from HOST 2026 has been featured in the Mizzou News <a href="https://engineering.missouri.edu/2026/turning-an-impossible-defense-problem-into-a-manageable-one/"> Turning an impossible defense problem into a manageable one </a>.</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">Feb'26</td>
-            <td style="text-align: left"> Our paper 'RIFT: A Scalable Methodology for LLM Accelerator Fault Assessment using Reinforcement Learning' has been nominated for the Best Paper Award from IEEE DATE 2026 Conference.</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">November'25</td>
-            <td style="text-align: left"> Two papers on Fault tolerance and hardware security of edge LLMs have been accepted for publication in the IEEE/ACM DATE 2026 and IEEE HOST 2026 conference !</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">October'25</td>
-            <td style="text-align: left"> I am serving as the Research Technical Program Subcommittee Chair (SEC2. Hardware Security: Primitives, Architecture, Design &amp; Test), for the <a href="http://dac.com"> ACM/ESDA/IEEE Design Automation Conference (DAC 2026) </a>.</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">October'25</td>
-            <td style="text-align: left"> Our team has won the 'best poster from conference papers' award in the IEEE ISMAR 2025 conference (core rank A*). Congratulations to the team !</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">July'25</td>
-            <td style="text-align: left"> I have received the 'Outstanding TPC Member Award' from the IEEE/ACM Design Automation Conference (DAC), 2025 !</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">May'25</td>
-            <td style="text-align: left"> Our paper on Hardware Trojan detection using LLMs is now available on <a href="https://ieeexplore.ieee.org/stamp/redirect.jsp?arnumber=/6287639/6514899/11091291.pdf"> IEEE Access </a>.</td>
-          </tr>
-          <tr>
-            <td style="text-align: left">February'25</td>
-            <td style="text-align: left"> I am serving as the Finance Chair for the <a href="https://www.iccd-conf.com/Home.html"> 43rd IEEE International Conference on Computer Design (ICCD 2025) </a>.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div id="bio" align="justify" style="display: none;">
-      <h5>Activities</h5>
-
-      <b><br>Journal Editorship: </b>
-      <ol>
-        <li> Associate Editor, ACM Transactions on Probabilistic Machine Learning (2023-Date) </li>
-        <li> MDPI Sensors (ISSN 1424-8220), Guest Editor for the Special Issue: Emerging Smart and Intelligent Wearable/Implantable Sensors for IoT and Biomedical applications, 2020. </li>
-      </ol>
-
-      <b><br>Conference Organization/Activities: </b>
-      <ol>
-        <li> Technical Program Subcommittee Chair (SEC2. Hardware Security: Primitives, Architecture, Design &amp; Test), ACM/ESDA/IEEE Design Automation Conference (DAC 2026). </li>
-        <li> Organizing Chair, the 1st International Workshop on Trustworthy, Secure, and Privacy-Aware Artificial Intelligence for Extended Reality Applications (TRUST-XR 2025). </li>
-        <li> Finance Chair, 43rd IEEE International Conference on Computer Design (ICCD 2025). </li>
-        <li> Program Committee Co-chair, IEEE International Conference on Engineering Reliable Autonomous Systems (ERAS 2025). </li>
-        <li> Organizing Chair, the 14th Central Area Networking and Security Workshop (CANSec 2021). </li>
-        <li> Session Chair, 56th ACM/ESDA/IEEE Design Automation Conference (DAC 2019).</li>
-      </ol>
-
-      <b>Technical Program Committee/Technical Committee Membership:</b>
-      <ol>
-        <li> IEEE Technical Committee on Verification of Autonomous Systems (VAS) </li>
-        <li> IEEE Technical Committee on Cyber-Physical Systems (CPS) </li>
-        <li> ACM Conference on Intelligent User Interfaces (ACM IUI 2026) </li>
-        <li> IEEE World Congress on SERVICES (IEEE SERVICES 2025) </li>
-        <li> LLM Assisted Security and Trust Exploration (LAST-X) Workshop co-located with NDSS 2026. </li>
-        <li> ACM/ESDA/IEEE Design Automation Conference (DAC 2025, DAC 2019-2021)</li>
-        <li> The 15th IEEE International Green and Sustainable Computing Conference (IGSC 2024) </li>
-        <li> IEEE/ACM Design, Automation and Test in Europe Conference (DATE 2025, DATE 2022) </li>
-        <li> The 22nd ACM-IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE 2024) </li>
-        <li> The 30th IEEE International Conference on Computer Communications and Networks (ICCCN 2022) </li>
-        <li> International Workshop on Big Data Analytics of Cyber-Physical Systems (CPSBigData 2019) </li>
-        <li> Annual IEEE International Systems Conference (SysCon 2018-2021) </li>
-        <li> IEEE International NEW Circuits And Systems (NEWCAS 2017-2018) </li>
-        <li> IFIP International Conference on Computer Intelligence and Its Applications (CIIA 2018) </li>
-      </ol>
-
-      <b>Peer-Reviewer for Journals:</b>
-      <ol>
-        <li> IEEE Transactions on Human-Machine Systems </li>
-        <li> Computers &amp; Security---Elsevier </li>
-        <li> IEEE IEEE Robotics and Automation Letters </li>
-        <li> IEEE Transactions on Artificial Intelligence </li>
-        <li> IEEE/ASME Transactions on Mechatronics </li>
-        <li> IEEE Transactions on Information Forensics and Security </li>
-        <li> Reliability Engineering and System Safety-Elsevier </li>
-        <li> IEEE Transactions on Reliability </li>
-        <li> IEEE Journal on Emerging and Selected Topics in Circuits and Systems </li>
-      </ol>
-
-      <br>
-    </div>
-
-    <!-- FIX 3: #hiring div is now reachable via the "Hirings" nav tab -->
-    <div id="hiring" align="justify" style="display: none;">
-      <h5>Prospective Students</h5>
-
-      <p> <b><br>Ph.D. Research/Teaching Assistantship (RA/TA) in formal verification </b>
-        <br>Funded Ph.D. positions are available for Fall 2020 in EECS department at the University of Missouri, Columbia, USA under the supervision of Dr. Khaza Anuarul Hoque. The research project will focus on the development of formal verification based techniques for designing dependable and safe cyber-physical systems.<br><br>
-
-        Established in 1849, the University of Missouri College of Engineering's excellence includes nine disciplines, 130 faculty members, more than 3,300 of the brightest undergraduates on campus and more than 600 exceptional graduate students at the flagship campus of the UM System. Electrical engineering at MU was established in 1884 – the first electrical engineering program in the nation. Located in the heart of Missouri, the College of Engineering at Mizzou operates the University of Missouri Research Reactor, the most powerful nuclear research reactor on a university campus nationwide.<br><br>
-
-        Successful candidates will receive financial support as Research/Teaching Assistants (RAs/TAs), and will also be awarded full tuition waiver. Candidates with expertise in one or more of the following priority areas are especially encouraged to apply.<br><br>
-
-        <b>Requirements:</b>
-        <ol>
-          <li> Excellent academic results in B.Sc/M.Sc. with major in computer science/electrical engineering. The exact admission requirements are available <a href="https://gradstudies.missouri.edu/degreecategory/electrical-and-computer-engineering/">here</a>.<br> </li>
-          <li> Strong background in mathematics (e.g. stochastic modeling, Markov chain) is required. Knowledge of formal verification/automata theory (especially, model checking) will be counted as a strong plus, but not mandatory. <br> </li>
-          <li> Strong programming skills (C/C++, Python) is required. Good understanding of graph theory, dynamic programming, machine learning and optimization techniques are also mandatory. </li>
-        </ol>
-
-        The interested candidates are suggested to send an <a href="mailto:hoquek@missouri.edu">email</a> to Dr. Hoque including (1) an email that expresses your interest to the specific research topic, and demonstrate how you meet the above-mentioned requirements, and (2) your curriculum vitae, including a list of publications (if any).<br><br>
-
-        For the latest hiring announcement, see also:
-        <a href="https://www.linkedin.com/posts/hoquek_phd-position-advertisement-activity-7417991612481396736-KxPh" target="_blank">LinkedIn post</a>.<br><br>
-
-        <b>Note:</b> Due to large volume of emails, I cannot reply to every email, but I will do my best to reply to competitive applicants.
-      </p>
-
-      <br>
-    </div>
-
-    <!-- FIX 8: Fixed typo "Comouter" → "Computer" -->
-    <div id="courses" align="justify" style="display: none;">
-      <h5>Teaching</h5>
-      <p> <b><br>University of Missouri - Columbia </b>
-        <br>Hardware Computer Aided Formal Verification (ECE 8001: Every Fall)
-        <br>VHDL &amp; Programmable Logic Controllers (ECE 4250/7250: Every Spring Semester)
-        <br>
-      </p>
-      <br>
-    </div>
-
-    <!-- FIX 7: Removed duplicate "Best Poster Award – IEEE ISMAR 2025" entry (was item 3 and 8) -->
-    <div id="awards" align="justify" style="display: none;">
-      <h5>Honors and Awards</h5><br>
-      <ol>
-        <li> Best Paper Award Nomination, IEEE/ACM Design, Automation, and Test in Europe (DATE) Conference, 2026 .<br> </li>
-        <li> Outstanding TPC Member Award, IEEE/ACM Design Automation Conference (DAC), 2025 <br> </li>
-        <li> Best Poster Award–Posters from Conference Papers, IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025 <br> </li>
-        <li> EECS Junior Faculty Excellence in Teaching 2024 award from the Electrical Engineering and Computer Science (EECS) department, University of Missouri-Columbia, 2024 <br> </li>
-        <li> Best Paper Award Nomination, the 21st ACM-IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE), 2023 <br> </li>
-        <li> EECS Junior Faculty Excellence in Research 2023 award from the Electrical Engineering and Computer Science (EECS) department, University of Missouri-Columbia, 2023 <br> </li>
-        <li> Junior Faculty Excellence in Teaching 2022 award from the College of Engineering (CoE), University of Missouri-Columbia, 2022 <br> </li>
-        <li> FQRNT Postdoctoral Fellowship Award, Fonds de Recherche du Qubec - Nature et Technologies (FQRNT), Canada, 2016-2018.<br> </li>
-        <li> Concordia Accelerator Award, Concordia University, 2015.<br> </li>
-        <li> ISU SSP Scholarship from International Space University to attend Space Studies Program (SSP), France, 2014.<br> </li>
-        <li> FQRNT Doctoral Research Award, Fonds de Recherche du Qubec - Nature et Technologies (FQRNT), Canada, 2012.<br></li>
-        <li> Deans Funding for Graduate Students, Concordia University (2011- 2014 and 2008-2010), Canada.<br> </li>
-        <li> Financial Support for Conference Participants, Microsystems Strategic Alliance of Qubec (ReSMiQ), 2013, 2014, 2015.<br> </li>
-        <li> Concordia University Conference and Exposition Award, School of Graduate Studies, Concordia University, 2013, 2014, 2015.<br> </li>
-        <li> ENCS Conference Support, Faculty of Engineering and Computer Science, Concordia University, 2013.<br></li>
-        <li> Best Paper Award for outstanding contribution from 8th IEEE International NEWCAS Conference, Canada, 2011.<br> </li>
-        <li> Student Travel Award, NASA Lunar Science Forum, NASA Ames Research Center, USA, 2010.<br> </li>
-        <li> ReSMiQ Scholarship for Master Students, Microsystems Strategic Alliance of Quebec (ReSMiQ), Canada, 2010.<br> </li>
-        <li> ReSMiQ Scholarship for Master Students from Microsystems Strategic Alliance of Quebec (ReSMiQ), Canada, 2009.<br> </li>
-      </ol>
-    </div>
-
-  </div>
 </div>
 
+<div id="courses" align="justify" style="display: none;">
+    <h5>Teaching</h5>
+    <p> <b><br>University of Missouri - Columbia </b>
+    <br>Hardware Comouter Aided Formal Verification (ECE 8001: Every Fall)	    
+    <br>VHDL & Programmable Logic Controllers (ECE 4250/7250: Every Spring Semester)
+<br>
+
+ </p>
+     
+    <br>
 </div>
+	
+	
+<div id="awards" align="justify" style="display: none;">
 
-<script async="" src="./files/analytics.js"></script>
-<script src="./files/jquery.js" type="text/javascript" charset="utf-8"></script>
-<script src="./files/jquery.tabify.source.js" type="text/javascript" charset="utf-8"></script>
+                         <h5>Honors and Awards</h5><br>
+                         <ol>
 
-<script type="text/javascript">
-// <![CDATA[
-$(document).ready(function () {
-  $('#nav').tabify();
-});
-// ]]>
-</script>
 
-<!-- End Document
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<li> Best Paper Award Nomination, IEEE/ACM Design, Automation, and Test in Europe (DATE) Conference, 2026 .<br> </li>	
+<li> Outstanding TPC Member Award, IEEE/ACM Design Automation Conference (DAC), 2025 <br> </li>	
+<li> Best Poster Award–Posters from Conference Papers, IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025 <br> </li>	
+<li> EECS Junior Faculty Excellence in Teaching 2024 award from the Electrical Engineering and Computer Science (EECS) department, University of Missouri-Columbia, 2024 <br> </li>	
+<li> Best Paper Award Nomination, the 21st ACM-IEEE International Symposium on Formal Methods and Models for System Design (MEMOCODE), 2023 <br> </li>
+<li> EECS Junior Faculty Excellence in Research 2023 award from the Electrical Engineering and Computer Science (EECS) department, University of Missouri-Columbia, 2023 <br> </li>	
+<li> Junior Faculty Excellence in Teaching 2022 award from the College of Engineering (CoE), University of Missouri-Columbia, 2022 <br> </li>
+<li> Best Poster Award–Posters from Conference Papers, IEEE International Symposium on Mixed and Augmented Reality (ISMAR), 2025 <br> </li>	
+<li> FQRNT Postdoctoral Fellowship Award, Fonds de Recherche du Qubec - Nature et Technologies (FQRNT), Canada, 2016-2018.<br> </li>
+<li> Concordia Accelerator Award, Concordia University, 2015.<br> </li>
+<li> ISU SSP Scholarship from International Space University to attend Space Studies Program (SSP), France, 2014.<br> </li>
+<li> FQRNT Doctoral Research Award, Fonds de Recherche du Qubec - Nature et Technologies (FQRNT), Canada, 2012.<br></li>
+<li> Deans Funding for Graduate Students, Concordia University (2011- 2014 and 2008-2010), Canada.<br> </li>
+<li> Financial Support for Conference Participants, Microsystems Strategic Alliance of Qubec (ReSMiQ), 2013, 2014, 2015.<br> </li>
+<li> Concordia University Conference and Exposition Award, School of Graduate Studies, Concordia University, 2013, 2014, 2015.<br> </li>
+<li> ENCS Conference Support, Faculty of Engineering and Computer Science, Concordia University, 2013.<br></li>
+<li> Best Paper Award for outstanding contribution from 8th IEEE International NEWCAS Conference, Canada, 2011.<br> </li>
+<li> Student Travel Award, NASA Lunar Science Forum, NASA Ames Research Center, USA, 2010.<br> </li>
+<li> ReSMiQ Scholarship forMaster Students, Microsystems Strategic Alliance of Quebec (ReSMiQ), Canada, 2010.<br> </li>
+<li> ReSMiQ Scholarship for Master Students from Microsystems Strategic Alliance of Quebec (ReSMiQ), Canada, 2009.<br> </li>
+                        </ol>
 
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+            <script async="" src="./files/analytics.js"></script><script src="./files/jquery.js" type="text/javascript" charset="utf-8"></script>
+            <script src="./files/jquery.tabify.source.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+                // <![CDATA[
+
+                $(document).ready(function () {
+                    $('#nav').tabify();
+                });
+
+                // ]]>
+            </script>
+
+
+            <!-- End Document
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script type="text/javascript">
 function stc(e,linkIndex){if(document.images){var linkText;if(navigator.appName.toLowerCase()=="microsoft internet explorer"){linkText=e.innerText}else{linkText=e.textContent}if(linkText==""){if(e.firstChild){var firstChild=e.firstChild.nodeName.toUpperCase();if(firstChild=="IMG"){linkText="Image: "+getName(e.firstChild.getAttribute('src'))}}else{var nodeName=e.nodeName.toUpperCase();if(nodeName=="AREA"){linkText="ImageMap: "+e.href}}}if(linkText==""){linkText=e.href}(new Image()).src="/a/i/stg.gif?f="+escape(document.location.href)+"&t="+escape(e.href)+"&i="+linkIndex+"&n="+escape(trimString(linkText))}}function getName(s){if(s.lastIndexOf('/')>=0){return(s.substring(s.lastIndexOf('/')+1,s.length))}else{return(s)}}function trimString(s){return(s.replace(/^\s*/,"").replace(/\s*$/,""))}
 </script>
@@ -278,17 +325,17 @@ var sc_project=10978425;
 var sc_invisible=1;
 var sc_security="bedbb399";
 var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "https://www.");
+"https://secure." : "http://www.");
 document.write("<sc"+"ript type='text/javascript' src='" +
 scJsHost+
 "statcounter.com/counter/counter.js'></"+"script>");
 </script>
-
-<noscript><div class="statcounter"><a title="shopify analytics ecommerce tracking"
-href="https://statcounter.com/shopify/" target="_blank"><img
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce tracking"
+href="http://statcounter.com/shopify/" target="_blank"><img
 class="statcounter"
 src="//c.statcounter.com/10978425/0/bedbb399/1/"
-alt="shopify analytics ecommerce tracking"></a></div></noscript>
+alt="shopify analytics ecommerce
+tracking"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
-
 </body></html>
