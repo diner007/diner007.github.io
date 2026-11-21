@@ -18,9 +18,10 @@ menuButton.addEventListener('click', () => {
   setMenu(menuButton.getAttribute('aria-expanded') === 'false');
 });
 navigation.addEventListener('click', (event) => {
-  const link = event.target.closest('a');
+  const link = event.target.closest('a[href]');
   if (link && compactNavigation.matches) {
     setMenu(false);
+    if (!link.getAttribute('href').startsWith('#')) return;
     const section = document.querySelector(link.hash);
     section.setAttribute('tabindex', '-1');
     section.focus({ preventScroll: true });
