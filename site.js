@@ -21,8 +21,9 @@ navigation.addEventListener('click', (event) => {
   const link = event.target.closest('a[href]');
   if (link && compactNavigation.matches) {
     setMenu(false);
-    if (!link.getAttribute('href').startsWith('#')) return;
-    const section = document.querySelector(link.hash);
+    if (!link.hash || !link.getAttribute('href').startsWith('#')) return;
+    const section = document.getElementById(link.hash.slice(1));
+    if (!section) return;
     section.setAttribute('tabindex', '-1');
     section.focus({ preventScroll: true });
   }
@@ -43,7 +44,6 @@ const filterStatus = document.querySelector('#filter-status');
 const toolbar = document.querySelector('.publication-toolbar');
 const previousPapers = document.querySelector('#previous-papers');
 const nextPapers = document.querySelector('#next-papers');
-const pageSize = 6;
 let publicationPage = 0;
 let matchingPapers = [];
 
@@ -56,6 +56,7 @@ const papers = Array.from(document.querySelectorAll('.paper'), (paper) => ({
   searchText: normalizeSearch(paper.querySelector('.paper-citation').textContent),
   topics: paper.dataset.topics.split(' '),
 }));
+const pageSize = previousPapers ? 6 : papers.length;
 
 function renderPublications() {
   const start = publicationPage * pageSize;
@@ -64,8 +65,10 @@ function renderPublications() {
   for (const { paper } of papers) {
     paper.hidden = !visible.has(paper);
   }
-  previousPapers.disabled = publicationPage === 0;
-  nextPapers.disabled = end >= matchingPapers.length;
+  if (previousPapers && nextPapers) {
+    previousPapers.disabled = publicationPage === 0;
+    nextPapers.disabled = end >= matchingPapers.length;
+  }
   filterStatus.textContent = matchingPapers.length
     ? `Showing ${start + 1}–${end} of ${matchingPapers.length} matching publications`
     : 'No publications match. Try a different search or clear the filters.';
@@ -100,12 +103,12 @@ function showLinkedPaper() {
 filters.addEventListener('input', filterPublications);
 filters.addEventListener('submit', (event) => event.preventDefault());
 filters.addEventListener('reset', () => requestAnimationFrame(filterPublications));
-previousPapers.addEventListener('click', () => {
+previousPapers?.addEventListener('click', () => {
   publicationPage -= 1;
   renderPublications();
   if (previousPapers.disabled) nextPapers.focus();
 });
-nextPapers.addEventListener('click', () => {
+nextPapers?.addEventListener('click', () => {
   publicationPage += 1;
   renderPublications();
   if (nextPapers.disabled) previousPapers.focus();

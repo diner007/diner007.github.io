@@ -112,7 +112,7 @@ figcaption a { color: var(--gold); }
 
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.45rem; }
 .publication-intro, .publication-status { color: var(--muted); margin-top: .55rem; }
-.publication-profiles { display: flex; flex-wrap: wrap; gap: .5rem 1.3rem; }
+.publication-profiles { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1.3rem; }
 .publication-filters { display: grid; grid-template-columns: minmax(12rem, 2fr) repeat(3, minmax(0, 1fr)) auto; gap: .75rem; align-items: end; }
 .publication-filters label { min-width: 0; font-size: .875rem; font-weight: 600; }
 .publication-filters input, .publication-filters select, .publication-filters button {
